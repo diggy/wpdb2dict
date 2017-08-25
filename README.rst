@@ -1,7 +1,7 @@
 wpdb2dict
 =========
 
-Converts a WordPress database to a Python dictionary, using `WP-CLI <https://github.com/wp-cli/wp-cli>`__'s `wp db query`_ command.
+Converts a WordPress database to a Python dictionary, using `WP-CLI <https://github.com/wp-cli/wp-cli>`__'s "wp db query" command.
 
 Installation
 ------------
@@ -9,6 +9,7 @@ Installation
 To install, use pip:
 
 .. code:: bash
+
     $ pip install wpdb2dict
 
 Usage
@@ -17,21 +18,25 @@ Usage
 Print:
 
 .. code:: bash
+
     $ python /path/to/wpdb2dict.py --path=/path/to/wp --url=https://example.com
 
 Export to file:
 
 .. code:: bash
+
     $ python /path/to/wpdb2dict.py --path=/path/to/wp --url=https://example.com > wpdb2dict.txt
 
 Example output
 --------------
 
 .. code:: python
+
     import pprint
     pprint.pprint(data['wp_posts']['1'])
 
 .. code:: python
+
     {'ID': '1',
      'comment_count': '1',
      'comment_status': 'open',
@@ -59,4 +64,4 @@ Example output
 License
 -------
 
-This script was released under the [MIT](https://github.com/diggy/wpdb2dict/LICENSE) license.
+This script was released under the `MIT <https://github.com/diggy/wpdb2dict/LICENSE>`__ license.
